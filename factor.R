@@ -166,7 +166,7 @@ gap_asia_2007$country %>%
 ## Check from the course and edit even the function part 1 I didn't finish the code I have to get it and edit
 
 
-gap_asia_2007 %>%  #$country %>% 
+gap_asia_2007 %>% 
   mutate(country = fct_relevel(fct_reorder(country,gdpPercap)))%>% 
            ggplot(aes(gdpPercap, fct_relevel(country), Thailand))+  ### not workign edit from the website
            geom_point()
